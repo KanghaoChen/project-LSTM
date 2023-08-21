@@ -1,0 +1,2 @@
+Prepared training set with 523204 pairs from 2017-01-01 to 2021-01-01 for 7688 regions with fire rate 0.01.
+Prepared test set with 112318 pairs starting 2021-01-01 for 7688 regions with fire rate 0.02.

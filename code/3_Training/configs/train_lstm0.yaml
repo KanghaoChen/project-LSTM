@@ -1,0 +1,18 @@
+dataset:
+  data_dir: ${hydra:runtime.cwd}
+  train_start: 2017-01-01
+  test_start: 2021-01-01 
+  test_stop: 2021-12-31
+  max_regions: 7688
+  cache: True
+batch_size: 256
+fire_weight: 10
+n_epoch: 5
+lr: 0.001
+
+device: cpu
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}_firwgt=${fire_weight}
+defaults:
+  - model: lstm0
